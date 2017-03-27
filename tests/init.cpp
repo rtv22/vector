@@ -16,7 +16,7 @@ SCENARIO("params", "[init with params]") {
 
 SCENARIO("copy", "[copy]") 
 {
-	vector_t A(1, 1);
+	vector_t A(1);
 	vector_t B(A);
 	REQUIRE(B.size() == 1);
 	REQUIRE(B.capacity() == 1);
