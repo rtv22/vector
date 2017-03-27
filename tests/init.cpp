@@ -18,7 +18,7 @@ SCENARIO("copy", "[copy]")
 {
 	vector_t vector(1);
 	vector_t vector_1(vector);
-	REQUIRE(vector_b.size() == 1);
+	REQUIRE(vector_1.size() == 1);
 }
 
 SCENARIO("size", "[size]")
