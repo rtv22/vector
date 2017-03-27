@@ -28,7 +28,7 @@ vector_t::~vector_t() noexcept
 	delete[] ptr_;
 }
 
-unsigned int vector_t::size() const  {
+unsigned int vector_t::size() const noexcept {
 	return size_;
 }
 
@@ -43,7 +43,7 @@ int vector_t::operator[](unsigned int index) const noexcept{
 void vector_t::push_back(int value) {
 	vector_t obj;
 	obj = *ptr_;
-	if (capacity_ = size_){
+	if (capacity_ == size_){
 		ptr_ = new int(2 * size_);
 		for (int i = 0; i < obj.size_; i++){
 			ptr_[i] = obj.ptr_[i];
